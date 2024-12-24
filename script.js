@@ -7,7 +7,6 @@ const fromCurr = document.querySelector(".from select");
 const toCurr = document.querySelector(".to select");
 const msg = document.querySelector(".msg");
 
-
 document.addEventListener('DOMContentLoaded',()=>{
 
   for (let select of dropdowns) {
@@ -42,7 +41,6 @@ document.addEventListener('DOMContentLoaded',()=>{
     let finalAmount = amtVal * rate;
     // console.log(fromCurr.value)
   
-    
     msg.innerText = `${amtVal} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
   };
 
